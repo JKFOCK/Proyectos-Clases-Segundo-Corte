@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Numero Primo</title>
+    <script>
+        /*var numero = 9;
+        var sw = true; 
+        var tamaño = numero/2; 
+        
+        for (let i = 2; i <= tamaño && sw; i++) {
+            if(numero%i == 0 ) {
+                sw = false;
+            }
+        }
+
+        if (sw) {
+            alert("El numero " + numero + " es primo");
+        }
+        else {
+            alert("El numero " + numero + " no es primo");
+        }*/
+
+        var arrayNumeros = [2,3,10,4];
+        var sumador= 0; 
+
+        for (let j = 0; j < arrayNumeros.length; j++) {
+            var numero = arrayNumeros[j]; 
+            var sw = true; 
+            var tamaño = numero/2;  
+             
+            
+            for (let i = 2; i <= tamaño && sw; i++) {
+                if(numero%i == 0 ) {
+                    sw = false; 
+                }
+            }
+
+            if (sw) {
+                sumador = sumador + numero; 
+            }
+        }
+
+        console.log("La sumatoria es " + sumador);
+        
+    </script>
+</head>
+<body>
+
+    <h1>Ejemplo Numero Primo</h1>
+    
+</body>
+</html>
