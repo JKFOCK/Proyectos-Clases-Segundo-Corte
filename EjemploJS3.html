@@ -17,11 +17,12 @@
 
         var arrayNumeros = [1,2,3,4,5,6];
 
-        for (let i = 0; i < arrayNumeros.length; i++) {
-            if (numero%2==0) {
-            console.log("El resultado es: " + arrayNumeros + " es par.");
+        arrayNumeros.forEach(element => {
+            if (element%2==0) {
+                console.log("El numero: " + element + "es par.")
             }
-        }
+            
+        });
 
     </script>
 </head>
