@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 7</title>
+    <script>
+        var cadena = "El taller 4 es un poco dificil A ".toLocaleLowerCase();
+        var contador = 0; 
+
+        for (let i = 0; i < cadena.length; i++) {
+            if (cadena.charAt(i) == "a" /*|| cadena.charAt(i) == "A"*/){
+                contador++; 
+            }
+        }
+        console.log("El numero de a es igual a: " + contador)
+    </script>
+</head>
+<body>
+    <h1>Ejemplo 7</h1>
+</body>
+</html>
