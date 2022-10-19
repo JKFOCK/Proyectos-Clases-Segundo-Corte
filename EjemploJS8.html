@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo contador vocales cerradas</title>
+    <script>
+        function contarLetras(palabra,letra) {
+            var palabra = palabra.toLowerCase();
+            var letra = letra.toLowerCase();  
+            var contadorLetras = 0;
+            for (let i = 0; i < palabra.length; i++) {
+                if (palabra.charAt(i) == letra) {
+                    contarLetras += 1;
+                }
+            }
+            return contarLetras;
+        }
+        var palabra = "paraguas";
+        var vocalCerrada = "U";
+        console.log(contarLetras(palabra,vocalCerrada));
+        
+    </script>
+</head>
+<body>
+    <h1>Ejemplo contador vocales cerradas</h1>
+</body>
+</html>
